@@ -56,12 +56,12 @@ const adivinharFrase = () => {
         seAcertou.innerText = 'Parabéns! Você acertou!';
     } else {
         console.log("Errado! A frase é de " + frases[indice].nome);
-        seAcertou.innerText = `Errado! A frase é de " + ${frases[indice].nome}`;
+        seAcertou.innerText = `Errado! A frase é de ${frases[indice].nome}`;
     }
 
     nome.innerText = `Nome: ${frases[indice].nome}`;
     frase.innerText = `Frase: ${frases[indice].frase}`;
-    uso.innerText = `Uso: ${frases[indice].uso}`;
+    uso.innerText = `Uso: ${frases[indice].usoDesc}`;
 }
 
 const adivinharUso = () => {
